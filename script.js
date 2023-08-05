@@ -418,14 +418,15 @@ const data = {
   "total_results": 788198
 }
 */
+const apiToken =
+  "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJlYmIxMThlNzlmZTdhNWFiN2Q0ODFkZTk5Y2QzZjliYyIsInN1YiI6IjY0Y2Q5NWMzNTQ5ZGRhMDExYzI3M2UxNCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.AIUQEfitQeYsISsRLT64blBDJm_Cf11SQQrNlVuoTQM";
 
 async function getMovies() {
   const options = {
     method: "GET",
     headers: {
       accept: "application/json",
-      Authorization:
-        "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJlYmIxMThlNzlmZTdhNWFiN2Q0ODFkZTk5Y2QzZjliYyIsInN1YiI6IjY0Y2Q5NWMzNTQ5ZGRhMDExYzI3M2UxNCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.AIUQEfitQeYsISsRLT64blBDJm_Cf11SQQrNlVuoTQM",
+      Authorization: `Bearer ${apiToken}`,
     },
   };
 
@@ -445,8 +446,7 @@ async function getMoreInfo(movie_id) {
     method: "GET",
     headers: {
       accept: "application/json",
-      Authorization:
-        "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJlYmIxMThlNzlmZTdhNWFiN2Q0ODFkZTk5Y2QzZjliYyIsInN1YiI6IjY0Y2Q5NWMzNTQ5ZGRhMDExYzI3M2UxNCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.AIUQEfitQeYsISsRLT64blBDJm_Cf11SQQrNlVuoTQM",
+      Authorization: `Bearer ${apiToken}`,
     },
   };
 
@@ -469,8 +469,7 @@ async function watch(e) {
     method: "GET",
     headers: {
       accept: "application/json",
-      Authorization:
-        "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJlYmIxMThlNzlmZTdhNWFiN2Q0ODFkZTk5Y2QzZjliYyIsInN1YiI6IjY0Y2Q5NWMzNTQ5ZGRhMDExYzI3M2UxNCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.AIUQEfitQeYsISsRLT64blBDJm_Cf11SQQrNlVuoTQM",
+      Authorization: `Bearer ${apiToken}`,
     },
   };
 
