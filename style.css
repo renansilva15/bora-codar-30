@@ -33,6 +33,7 @@ button {
   font-weight: 400;
   line-height: 125%;
   cursor: pointer;
+  transition: 75ms;
 }
 
 .card {
@@ -79,6 +80,13 @@ header button {
   background: var(
     --gradientes-gradiente-normal,
     linear-gradient(90deg, #8323ff 0%, #ff2daf 100%)
+  );
+}
+
+header button:hover {
+  background: var(
+    --gradientes-gradiente-normal,
+    linear-gradient(90deg, #a545ff 0%, #ff4fcf 100%)
   );
 }
 
@@ -129,7 +137,12 @@ header button {
 }
 
 /* Cópia de seletor direto do inspecionar do navegador */
-body > section > div > section > div:nth-child(2) > div.poster > img {
+/* body > section > div > section > div:nth-child(2) > div.poster > img {
+  width: 12.125rem;
+  height: 18.0625rem;
+} */
+
+div.poster > img {
   width: 12.125rem;
   height: 18.0625rem;
 }
@@ -155,4 +168,8 @@ body > section > div > section > div:nth-child(2) > div.poster > img {
   font-size: 1rem;
   font-weight: 400;
   line-height: 125%;
+}
+
+.movie button:hover {
+  background: #3c3c48;
 }
