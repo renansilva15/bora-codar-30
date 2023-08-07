@@ -184,6 +184,7 @@ div.poster > img {
     padding: 0;
     width: 100vw;
     overflow-x: hidden;
+    border-radius: 0;
   }
 
   .container {
